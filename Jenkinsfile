@@ -12,7 +12,7 @@ pipeline {
       stages {
         stage('Clone sources') {
             steps {
-                git url: 'https://github.com/Herve-NAHIMANA/TP3.git'
+                git branch: 'main', url:'https://github.com/Herve-NAHIMANA/TP3.git'
             }
         }
         stage('Prerequis') { // Compile and do unit testing
